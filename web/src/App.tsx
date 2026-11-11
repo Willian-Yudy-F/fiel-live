@@ -111,7 +111,9 @@ export default function Home() {
   }
 
   return (
-    <main>
+    <>
+    <a className="skip-link" href="#main-content">Skip to main content</a>
+    <main id="main-content">
       <header className="topbar">
         <a className="brand" href="#top" aria-label="FIEL home">
           <span className="brand-mark">F</span>
@@ -279,5 +281,6 @@ export default function Home() {
 
       <footer><span>FIEL · FICTIONAL TEAMS · SYNTHETIC DATA</span><span>NO CLUB MARKS · NO PROPRIETARY FEEDS</span><span>SYDNEY · 2026</span></footer>
     </main>
+    </>
   );
 }
